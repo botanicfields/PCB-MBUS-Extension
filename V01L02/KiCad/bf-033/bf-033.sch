@@ -1,0 +1,628 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "BF-033"
+Date "2021-07-05"
+Rev "V01L01"
+Comp "Copyright 2021 BotanicFields, Inc."
+Comment1 "M-Bus Extension"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 8250 1350 2    50   ~ 0
+GPIO23
+Text Label 8250 1450 2    50   ~ 0
+GPIO19
+Text Label 8250 1550 2    50   ~ 0
+GPIO18
+Text Label 8250 1650 2    50   ~ 0
+GPIO3
+Text Label 8250 1750 2    50   ~ 0
+GPIO16
+Text Label 8250 1850 2    50   ~ 0
+GPIO21
+Text Label 8250 1950 2    50   ~ 0
+GPIO2
+Text Label 8250 2050 2    50   ~ 0
+GPIO12
+Text Label 8250 2150 2    50   ~ 0
+GPIO15
+Text Label 8750 1050 0    50   ~ 0
+GPIO35
+Text Label 8750 1150 0    50   ~ 0
+GPIO36
+Text Label 8750 1250 0    50   ~ 0
+EN
+Text Label 8750 1350 0    50   ~ 0
+GPIO25
+Text Label 8750 1450 0    50   ~ 0
+GPIO26
+Text Label 8750 1650 0    50   ~ 0
+GPIO1
+Text Label 8750 1750 0    50   ~ 0
+GPIO17
+Text Label 8750 1950 0    50   ~ 0
+GPIO5
+Text Label 8750 2050 0    50   ~ 0
+GPIO13
+Text Label 8750 2150 0    50   ~ 0
+GPIO0
+Text Label 8750 2250 0    50   ~ 0
+GPIO34
+$Comp
+L power:+3V3 #PWR015
+U 1 1 5CD7CFD7
+P 9200 1300
+F 0 "#PWR015" H 9200 1150 50  0001 C CNN
+F 1 "+3V3" H 9215 1473 50  0000 C CNN
+F 2 "" H 9200 1300 50  0001 C CNN
+F 3 "" H 9200 1300 50  0001 C CNN
+	1    9200 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR019
+U 1 1 5CD7D6A2
+P 9200 2100
+F 0 "#PWR019" H 9200 1950 50  0001 C CNN
+F 1 "+5V" H 9215 2273 50  0000 C CNN
+F 2 "" H 9200 2100 50  0001 C CNN
+F 3 "" H 9200 2100 50  0001 C CNN
+	1    9200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR022
+U 1 1 5CD7DF18
+P 9700 2200
+F 0 "#PWR022" H 9700 2050 50  0001 C CNN
+F 1 "+BATT" H 9715 2373 50  0000 C CNN
+F 2 "" H 9700 2200 50  0001 C CNN
+F 3 "" H 9700 2200 50  0001 C CNN
+	1    9700 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5CD7E40D
+P 7700 1450
+F 0 "#PWR017" H 7700 1200 50  0001 C CNN
+F 1 "GND" H 7705 1277 50  0000 C CNN
+F 2 "" H 7700 1450 50  0001 C CNN
+F 3 "" H 7700 1450 50  0001 C CNN
+	1    7700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG04
+U 1 1 5CD7EAAD
+P 9450 2300
+F 0 "#FLG04" H 9450 2375 50  0001 C CNN
+F 1 "PWR_FLAG" H 9450 2473 50  0000 C CNN
+F 2 "" H 9450 2300 50  0001 C CNN
+F 3 "~" H 9450 2300 50  0001 C CNN
+	1    9450 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5CD8D31E
+P 9450 1500
+F 0 "#FLG03" H 9450 1575 50  0001 C CNN
+F 1 "PWR_FLAG" H 9450 1673 50  0000 C CNN
+F 2 "" H 9450 1500 50  0001 C CNN
+F 3 "~" H 9450 1500 50  0001 C CNN
+	1    9450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG06
+U 1 1 5CD8D64D
+P 9950 2400
+F 0 "#FLG06" H 9950 2475 50  0001 C CNN
+F 1 "PWR_FLAG" H 9950 2573 50  0000 C CNN
+F 2 "" H 9950 2400 50  0001 C CNN
+F 3 "~" H 9950 2400 50  0001 C CNN
+	1    9950 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2350 9200 2350
+Connection ~ 7700 1150
+Wire Wire Line
+	7700 1150 7700 1050
+Connection ~ 7700 1250
+Wire Wire Line
+	7700 1250 7700 1150
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5CD98ECD
+P 7450 1000
+F 0 "#FLG02" H 7450 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 7450 1173 50  0000 C CNN
+F 2 "" H 7450 1000 50  0001 C CNN
+F 3 "~" H 7450 1000 50  0001 C CNN
+	1    7450 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2450 9700 2450
+Wire Wire Line
+	9450 1550 9200 1550
+Wire Wire Line
+	9700 2200 9700 2450
+Wire Wire Line
+	9200 2100 9200 2350
+Wire Wire Line
+	9200 1300 9200 1550
+Wire Wire Line
+	9950 2400 9950 2450
+Wire Wire Line
+	9950 2450 9700 2450
+Wire Wire Line
+	9450 2300 9450 2350
+Wire Wire Line
+	9450 2350 9200 2350
+Wire Wire Line
+	9450 1500 9450 1550
+Connection ~ 7700 1050
+Wire Wire Line
+	7700 1250 7700 1450
+Text Label 8750 1850 0    50   ~ 0
+GPIO22
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F54EC75
+P 10500 750
+F 0 "H1" H 10600 796 50  0000 L CNN
+F 1 "MountingHole" H 10600 705 50  0000 L CNN
+F 2 "bf:BF@MountingHole_3.2mm_M3" H 10500 750 50  0001 C CNN
+F 3 "~" H 10500 750 50  0001 C CNN
+	1    10500 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5F54F74E
+P 10500 1000
+F 0 "H2" H 10600 1046 50  0000 L CNN
+F 1 "MountingHole" H 10600 955 50  0000 L CNN
+F 2 "bf:BF@MountingHole_3.2mm_M3" H 10500 1000 50  0001 C CNN
+F 3 "~" H 10500 1000 50  0001 C CNN
+	1    10500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5F54FB16
+P 10500 1250
+F 0 "H3" H 10600 1296 50  0000 L CNN
+F 1 "MountingHole" H 10600 1205 50  0000 L CNN
+F 2 "bf:BF@MountingHole_3.2mm_M3" H 10500 1250 50  0001 C CNN
+F 3 "~" H 10500 1250 50  0001 C CNN
+	1    10500 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5F54FB20
+P 10500 1500
+F 0 "H4" H 10600 1546 50  0000 L CNN
+F 1 "MountingHole" H 10600 1455 50  0000 L CNN
+F 2 "bf:BF@MountingHole_3.2mm_M3" H 10500 1500 50  0001 C CNN
+F 3 "~" H 10500 1500 50  0001 C CNN
+	1    10500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5F550331
+P 10500 1750
+F 0 "H5" H 10600 1796 50  0000 L CNN
+F 1 "MountingHole" H 10600 1705 50  0000 L CNN
+F 2 "bf:BF@MountingHole_2.2mm_M2" H 10500 1750 50  0001 C CNN
+F 3 "~" H 10500 1750 50  0001 C CNN
+	1    10500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 5F55033B
+P 10500 2000
+F 0 "H6" H 10600 2046 50  0000 L CNN
+F 1 "MountingHole" H 10600 1955 50  0000 L CNN
+F 2 "bf:BF@MountingHole_2.2mm_M2" H 10500 2000 50  0001 C CNN
+F 3 "~" H 10500 2000 50  0001 C CNN
+	1    10500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 5F550345
+P 10500 2250
+F 0 "H7" H 10600 2296 50  0000 L CNN
+F 1 "MountingHole" H 10600 2205 50  0000 L CNN
+F 2 "bf:BF@MountingHole_2.2mm_M2" H 10500 2250 50  0001 C CNN
+F 3 "~" H 10500 2250 50  0001 C CNN
+	1    10500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 5F55034F
+P 10500 2500
+F 0 "H8" H 10600 2546 50  0000 L CNN
+F 1 "MountingHole" H 10600 2455 50  0000 L CNN
+F 2 "bf:BF@MountingHole_2.2mm_M2" H 10500 2500 50  0001 C CNN
+F 3 "~" H 10500 2500 50  0001 C CNN
+	1    10500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 1050 7700 1050
+Wire Wire Line
+	7450 1000 7450 1050
+Connection ~ 9200 1550
+Wire Wire Line
+	9200 1550 8750 1550
+Connection ~ 9200 2350
+Connection ~ 9700 2450
+Wire Wire Line
+	8250 1250 7700 1250
+Wire Wire Line
+	8250 1150 7700 1150
+Wire Wire Line
+	7700 1050 8250 1050
+$Comp
+L Connector_Generic:Conn_02x15_Odd_Even J1
+U 1 1 5CD75190
+P 8550 1750
+F 0 "J1" H 8600 2667 50  0000 C CNN
+F 1 "M-BUS" H 8600 2576 50  0000 C CNN
+F 2 "bf:BF@M5Stack_MBUS" H 8550 1750 50  0001 C CNN
+F 3 "~" H 8550 1750 50  0001 C CNN
+	1    8550 1750
+	-1   0    0    -1  
+$EndComp
+Text Label 8250 3350 2    50   ~ 0
+GPIO23
+Text Label 8250 3450 2    50   ~ 0
+GPIO19
+Text Label 8250 3550 2    50   ~ 0
+GPIO18
+Text Label 8250 3650 2    50   ~ 0
+GPIO3
+Text Label 8250 3750 2    50   ~ 0
+GPIO16
+Text Label 8250 3850 2    50   ~ 0
+GPIO21
+Text Label 8250 3950 2    50   ~ 0
+GPIO2
+Text Label 8250 4050 2    50   ~ 0
+GPIO12
+Text Label 8250 4150 2    50   ~ 0
+GPIO15
+Text Label 8750 3050 0    50   ~ 0
+GPIO35
+Text Label 8750 3150 0    50   ~ 0
+GPIO36
+Text Label 8750 3250 0    50   ~ 0
+EN
+Text Label 8750 3350 0    50   ~ 0
+GPIO25
+Text Label 8750 3450 0    50   ~ 0
+GPIO26
+Text Label 8750 3650 0    50   ~ 0
+GPIO1
+Text Label 8750 3750 0    50   ~ 0
+GPIO17
+Text Label 8750 3950 0    50   ~ 0
+GPIO5
+Text Label 8750 4050 0    50   ~ 0
+GPIO13
+Text Label 8750 4150 0    50   ~ 0
+GPIO0
+Text Label 8750 4250 0    50   ~ 0
+GPIO34
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 60E3E7A0
+P 9200 3300
+F 0 "#PWR0101" H 9200 3150 50  0001 C CNN
+F 1 "+3V3" H 9215 3473 50  0000 C CNN
+F 2 "" H 9200 3300 50  0001 C CNN
+F 3 "" H 9200 3300 50  0001 C CNN
+	1    9200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 60E3E7AA
+P 9200 4100
+F 0 "#PWR0102" H 9200 3950 50  0001 C CNN
+F 1 "+5V" H 9215 4273 50  0000 C CNN
+F 2 "" H 9200 4100 50  0001 C CNN
+F 3 "" H 9200 4100 50  0001 C CNN
+	1    9200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0103
+U 1 1 60E3E7B4
+P 9700 4200
+F 0 "#PWR0103" H 9700 4050 50  0001 C CNN
+F 1 "+BATT" H 9715 4373 50  0000 C CNN
+F 2 "" H 9700 4200 50  0001 C CNN
+F 3 "" H 9700 4200 50  0001 C CNN
+	1    9700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 60E3E7BE
+P 7700 3450
+F 0 "#PWR0104" H 7700 3200 50  0001 C CNN
+F 1 "GND" H 7705 3277 50  0000 C CNN
+F 2 "" H 7700 3450 50  0001 C CNN
+F 3 "" H 7700 3450 50  0001 C CNN
+	1    7700 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4350 9200 4350
+Connection ~ 7700 3150
+Wire Wire Line
+	7700 3150 7700 3050
+Connection ~ 7700 3250
+Wire Wire Line
+	7700 3250 7700 3150
+Wire Wire Line
+	8750 4450 9700 4450
+Wire Wire Line
+	9700 4200 9700 4450
+Wire Wire Line
+	9200 4100 9200 4350
+Wire Wire Line
+	9200 3300 9200 3550
+Wire Wire Line
+	7700 3250 7700 3450
+Text Label 8750 3850 0    50   ~ 0
+GPIO22
+Wire Wire Line
+	9200 3550 8750 3550
+Wire Wire Line
+	8250 3250 7700 3250
+Wire Wire Line
+	8250 3150 7700 3150
+Wire Wire Line
+	7700 3050 8250 3050
+$Comp
+L Connector_Generic:Conn_02x15_Odd_Even J2
+U 1 1 60E3E88C
+P 8550 3750
+F 0 "J2" H 8600 4667 50  0000 C CNN
+F 1 "M-BUS" H 8600 4576 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x15_P2.54mm_Vertical" H 8550 3750 50  0001 C CNN
+F 3 "~" H 8550 3750 50  0001 C CNN
+	1    8550 3750
+	-1   0    0    -1  
+$EndComp
+Text Label 8250 5350 2    50   ~ 0
+GPIO23
+Text Label 8250 5450 2    50   ~ 0
+GPIO19
+Text Label 8250 5550 2    50   ~ 0
+GPIO18
+Text Label 8250 5650 2    50   ~ 0
+GPIO3
+Text Label 8250 5750 2    50   ~ 0
+GPIO16
+Text Label 8250 5850 2    50   ~ 0
+GPIO21
+Text Label 8250 5950 2    50   ~ 0
+GPIO2
+Text Label 8250 6050 2    50   ~ 0
+GPIO12
+Text Label 8250 6150 2    50   ~ 0
+GPIO15
+Text Label 8750 5050 0    50   ~ 0
+GPIO35
+Text Label 8750 5150 0    50   ~ 0
+GPIO36
+Text Label 8750 5250 0    50   ~ 0
+EN
+Text Label 8750 5350 0    50   ~ 0
+GPIO25
+Text Label 8750 5450 0    50   ~ 0
+GPIO26
+Text Label 8750 5650 0    50   ~ 0
+GPIO1
+Text Label 8750 5750 0    50   ~ 0
+GPIO17
+Text Label 8750 5950 0    50   ~ 0
+GPIO5
+Text Label 8750 6050 0    50   ~ 0
+GPIO13
+Text Label 8750 6150 0    50   ~ 0
+GPIO0
+Text Label 8750 6250 0    50   ~ 0
+GPIO34
+$Comp
+L power:+3V3 #PWR0105
+U 1 1 60E58034
+P 9200 5300
+F 0 "#PWR0105" H 9200 5150 50  0001 C CNN
+F 1 "+3V3" H 9215 5473 50  0000 C CNN
+F 2 "" H 9200 5300 50  0001 C CNN
+F 3 "" H 9200 5300 50  0001 C CNN
+	1    9200 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 60E5803E
+P 9200 6100
+F 0 "#PWR0106" H 9200 5950 50  0001 C CNN
+F 1 "+5V" H 9215 6273 50  0000 C CNN
+F 2 "" H 9200 6100 50  0001 C CNN
+F 3 "" H 9200 6100 50  0001 C CNN
+	1    9200 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0107
+U 1 1 60E58048
+P 9700 6200
+F 0 "#PWR0107" H 9700 6050 50  0001 C CNN
+F 1 "+BATT" H 9715 6373 50  0000 C CNN
+F 2 "" H 9700 6200 50  0001 C CNN
+F 3 "" H 9700 6200 50  0001 C CNN
+	1    9700 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 60E58052
+P 7700 5450
+F 0 "#PWR0108" H 7700 5200 50  0001 C CNN
+F 1 "GND" H 7705 5277 50  0000 C CNN
+F 2 "" H 7700 5450 50  0001 C CNN
+F 3 "" H 7700 5450 50  0001 C CNN
+	1    7700 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 6350 9200 6350
+Connection ~ 7700 5150
+Wire Wire Line
+	7700 5150 7700 5050
+Connection ~ 7700 5250
+Wire Wire Line
+	7700 5250 7700 5150
+Wire Wire Line
+	8750 6450 9700 6450
+Wire Wire Line
+	9700 6200 9700 6450
+Wire Wire Line
+	9200 6100 9200 6350
+Wire Wire Line
+	9200 5300 9200 5550
+Wire Wire Line
+	7700 5250 7700 5450
+Text Label 8750 5850 0    50   ~ 0
+GPIO22
+Wire Wire Line
+	9200 5550 8750 5550
+Wire Wire Line
+	8250 5250 7700 5250
+Wire Wire Line
+	8250 5150 7700 5150
+Wire Wire Line
+	7700 5050 8250 5050
+$Comp
+L Connector_Generic:Conn_02x15_Odd_Even J3
+U 1 1 60E580BE
+P 8550 5750
+F 0 "J3" H 8600 6667 50  0000 C CNN
+F 1 "M-BUS" H 8600 6576 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Horizontal" H 8550 5750 50  0001 C CNN
+F 3 "~" H 8550 5750 50  0001 C CNN
+	1    8550 5750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0109
+U 1 1 60E5808E
+P 7700 6200
+F 0 "#PWR0109" H 7700 6050 50  0001 C CNN
+F 1 "VBUS" H 7715 6373 50  0000 C CNN
+F 2 "" H 7700 6200 50  0001 C CNN
+F 3 "" H 7700 6200 50  0001 C CNN
+	1    7700 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 6250 8250 6250
+Wire Wire Line
+	8250 6350 7700 6350
+Wire Wire Line
+	8250 6450 7700 6450
+Wire Wire Line
+	7700 6350 7700 6250
+Connection ~ 7700 6350
+Wire Wire Line
+	7700 6450 7700 6350
+Connection ~ 7700 6250
+Wire Wire Line
+	7700 6200 7700 6250
+$Comp
+L power:VBUS #PWR0110
+U 1 1 60E3E7FA
+P 7700 4200
+F 0 "#PWR0110" H 7700 4050 50  0001 C CNN
+F 1 "VBUS" H 7715 4373 50  0000 C CNN
+F 2 "" H 7700 4200 50  0001 C CNN
+F 3 "" H 7700 4200 50  0001 C CNN
+	1    7700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4250 8250 4250
+Wire Wire Line
+	8250 4350 7700 4350
+Wire Wire Line
+	8250 4450 7700 4450
+Wire Wire Line
+	7700 4350 7700 4250
+Connection ~ 7700 4350
+Wire Wire Line
+	7700 4450 7700 4350
+Connection ~ 7700 4250
+Wire Wire Line
+	7700 4200 7700 4250
+Wire Wire Line
+	7700 2250 8250 2250
+Wire Wire Line
+	8250 2350 7700 2350
+Wire Wire Line
+	7450 2400 7450 2450
+Wire Wire Line
+	7700 2350 7700 2250
+Connection ~ 7700 2350
+Wire Wire Line
+	8250 2450 7700 2450
+Wire Wire Line
+	7450 2450 7700 2450
+Connection ~ 7700 2450
+Wire Wire Line
+	7700 2450 7700 2350
+Connection ~ 7700 2250
+Wire Wire Line
+	7700 2200 7700 2250
+$Comp
+L power:PWR_FLAG #FLG05
+U 1 1 5CDC4D7C
+P 7450 2400
+F 0 "#FLG05" H 7450 2475 50  0001 C CNN
+F 1 "PWR_FLAG" H 7450 2573 50  0000 C CNN
+F 2 "" H 7450 2400 50  0001 C CNN
+F 3 "~" H 7450 2400 50  0001 C CNN
+	1    7450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR021
+U 1 1 5CDC3382
+P 7700 2200
+F 0 "#PWR021" H 7700 2050 50  0001 C CNN
+F 1 "VBUS" H 7715 2373 50  0000 C CNN
+F 2 "" H 7700 2200 50  0001 C CNN
+F 3 "" H 7700 2200 50  0001 C CNN
+	1    7700 2200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
