@@ -9,6 +9,9 @@ M5Stackの外にM-Busモジュールを接続するエクステンション基�
 
 <img src="./image/asm.JPG" width=300>
 
+## 委託販売（スイッチサイエンス）
+https://www.switch-science.com/catalog/7371/
+
 ## 内容物
 - プリント基板 ×1
 - M-Busピンソケット(M5Stack純正品) ×1
